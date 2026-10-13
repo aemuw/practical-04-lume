@@ -1,0 +1,227 @@
+/* 1. Design tokens і базові правила. */
+:root {
+    --color-text: #121413;
+    --color-muted: #616a63;
+    --color-background: #f6f3eb;
+    --color-surface: #ffffff;
+    --color-border: #d9d2c4;
+    --color-accent: #bd3500;
+    --space: 0.5rem;
+    --radius: 1.5rem;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: var(--color-text);
+    background: var(--color-background);
+    font-family: Arial, "Segoe UI", sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+img {
+    display: block;
+    max-inline-size: 100%;
+    block-size: auto;
+}
+
+h1,
+h2,
+h3 {
+    margin-block: 0 calc(var(--space) * 2);
+    line-height: 1.15;
+    letter-spacing: -0.025em;
+    overflow-wrap: anywhere;
+}
+
+h2 { font-size: 1.65rem; }
+h3 { font-size: 1.15rem; }
+p { margin-block: 0 calc(var(--space) * 2); }
+
+a {
+    color: var(--color-text);
+    text-underline-offset: 0.2em;
+}
+
+a:visited { color: var(--color-muted); }
+a:hover { color: var(--color-accent); }
+
+a,
+button,
+input,
+select,
+textarea {
+    transition: color 150ms ease, background-color 150ms ease, border-color 150ms ease;
+}
+
+:focus-visible {
+    outline: 3px solid var(--color-accent);
+    outline-offset: 4px;
+}
+
+/* 2. Контейнер і локальна desktop-композиція, без системи breakpoints. */
+.container {
+    max-inline-size: 84rem;
+    padding-inline: calc(var(--space) * 4);
+    margin-inline: auto;
+}
+
+.page-main { padding-block: calc(var(--space) * 4); }
+.page-main:focus { outline-offset: -3px; }
+
+.header-inner,
+.site-nav ul,
+.account-nav,
+.catalog-tools,
+.search-form,
+.hero,
+.collection-list,
+.form-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: calc(var(--space) * 3);
+}
+
+.header-inner { justify-content: space-between; }
+.site-nav ul { list-style: none; margin: 0; padding: 0; }
+.catalog-tools { justify-content: space-between; margin-block-end: calc(var(--space) * 5); }
+.search-form { flex: 1 1 34rem; gap: var(--space); }
+.search-form .field-control { inline-size: 18rem; flex: 0 1 18rem; min-inline-size: 0; }
+.hero { align-items: flex-start; gap: calc(var(--space) * 6); padding-block: calc(var(--space) * 3); }
+.hero-copy { flex: 1 1 25rem; padding-block: calc(var(--space) * 5); min-inline-size: 0; }
+.featured-card { flex: 1 1 25rem; min-inline-size: 0; }
+.collection-list { list-style: none; padding: 0; margin: 0; align-items: stretch; }
+.collection-list > li { flex: 1 1 14rem; min-inline-size: 0; }
+.form-actions { margin-block-start: calc(var(--space) * 4); }
+
+/* 3. Компоненти. */
+.site-header { padding-block: calc(var(--space) * 4); border-block-end: 1px solid var(--color-border); }
+.brand { display: block; text-decoration: none; color: var(--color-text); }
+.brand strong { display: block; font-size: 1.75rem; line-height: 1.1; letter-spacing: -0.04em; }
+.brand span { display: block; font-size: 0.65rem; font-weight: 700; color: var(--color-muted); margin-block-start: var(--space); }
+.site-nav a,
+.account-link { display: inline-block; padding-block: calc(var(--space) * 1.5); font-size: 0.85rem; font-weight: 700; text-decoration: none; }
+.site-nav a[aria-current="page"],
+.account-link[aria-current="page"] { color: var(--color-accent); text-decoration: underline; text-decoration-thickness: 2px; }
+.eyebrow { font-size: 0.85rem; font-weight: 700; color: var(--color-accent); text-transform: uppercase; letter-spacing: 0.06em; }
+.hero-title { font-size: clamp(2.5rem, 6vw, 6.25rem); line-height: 1; }
+.hero-description { max-inline-size: 34ch; font-size: 1.35rem; line-height: 1.45; color: var(--color-muted); margin-block: calc(var(--space) * 3) calc(var(--space) * 4); }
+.slide-number { margin-block-start: calc(var(--space) * 6); font-size: 0.85rem; color: var(--color-muted); font-weight: 700; }
+.card { padding: calc(var(--space) * 3); background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius); }
+.card img { inline-size: 100%; aspect-ratio: 1; object-fit: contain; border-radius: calc(var(--radius) / 2); margin-block-end: calc(var(--space) * 2); }
+.featured-card img { max-block-size: 28rem; }
+.featured-card p:first-of-type { font-weight: 700; color: var(--color-accent); }
+.featured-card p:last-child { color: var(--color-muted); margin-block-end: 0; }
+.product-card { block-size: 100%; }
+.product-card > a { display: inline-block; margin-block-start: var(--space); }
+.price { font-weight: 700; }
+.page-section { padding-block: calc(var(--space) * 6); border-block-start: 1px solid var(--color-border); }
+.page-section > p { max-inline-size: 70ch; }
+.journal-entry { padding-block: calc(var(--space) * 2); }
+.journal-entry p { font-size: 0.8rem; color: var(--color-muted); }
+.site-footer { padding-block: calc(var(--space) * 4); border-block-start: 1px solid var(--color-border); color: var(--color-muted); }
+.site-footer ul { padding-inline-start: 1.25rem; }
+
+.button {
+    display: inline-block;
+    padding: 0.8rem 1.4rem;
+    border: 1px solid var(--color-text);
+    border-radius: 999px;
+    color: var(--color-surface);
+    background: var(--color-text);
+    font: inherit;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button:visited { color: var(--color-surface); }
+.button--secondary,
+.button--secondary:visited {
+    color: var(--color-text);
+    background: transparent;
+    border-color: var(--color-text);
+}
+
+.button:hover { background: var(--color-accent); border-color: var(--color-accent); color: var(--color-surface); }
+.button:active { background: var(--color-muted); border-color: var(--color-muted); }
+.button:disabled { background: var(--color-border); color: var(--color-text); border-color: var(--color-border); cursor: not-allowed; }
+
+.form-panel {
+    max-inline-size: 48rem;
+    padding: clamp(1.25rem, 4vw, 2.5rem);
+    margin-inline: auto;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+}
+
+.page-title { font-size: clamp(2rem, 3.5vw, 3rem); }
+.form-intro { color: var(--color-muted); }
+.demo-note { padding-inline-start: calc(var(--space) * 2); border-inline-start: 3px solid var(--color-accent); font-size: 0.9rem; margin-block: calc(var(--space) * 3); }
+fieldset { min-inline-size: 0; margin: calc(var(--space) * 4) 0; padding: calc(var(--space) * 3); border: 1px solid var(--color-border); border-radius: calc(var(--radius) / 2); }
+legend { padding-inline: var(--space); font-weight: 700; max-inline-size: 100%; }
+.field { margin-block: calc(var(--space) * 2); }
+.field > label { display: block; font-weight: 700; margin-block-end: var(--space); }
+.hint { color: var(--color-muted); font-size: 0.9rem; max-inline-size: 70ch; margin-block-end: var(--space); }
+.field-control {
+    display: block;
+    inline-size: 100%;
+    max-inline-size: 100%;
+    padding: 0.8rem 1rem;
+    border: 1px solid var(--color-muted);
+    border-radius: 0.5rem;
+    color: var(--color-text);
+    background: var(--color-surface);
+    font: inherit;
+    line-height: 1.5;
+}
+
+textarea.field-control { resize: vertical; }
+.field-control:hover { border-color: var(--color-muted); }
+.field-control:focus-visible { border-color: var(--color-accent); }
+.field-control:disabled { background: var(--color-background); color: var(--color-muted); cursor: not-allowed; }
+.choice { display: flex; align-items: flex-start; gap: calc(var(--space) * 1.5); margin-block: var(--space); }
+.choice > label { padding-block: var(--space); cursor: pointer; overflow-wrap: anywhere; }
+.choice-control {
+    display: inline-block;
+    flex: 0 0 auto;
+    inline-size: 1.125rem;
+    block-size: 1.125rem;
+    padding: 0;
+    margin: 0.8rem 0 0;
+    border: 0;
+    border-radius: 0;
+    accent-color: var(--color-text);
+    cursor: pointer;
+}
+.field-error { display: none; color: var(--color-accent); font-size: 0.85rem; margin-block-start: var(--space); }
+.field-control:user-invalid { border-color: var(--color-accent); border-width: 2px; }
+.field-control:user-invalid + .field-error { display: block; }
+
+/* 4. Utilities та доступні стани. Absolute лише для skip-link. */
+.skip-link {
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-start: calc(var(--space) * 2);
+    padding: 0.75rem 1rem;
+    transform: translateY(-140%);
+    background: var(--color-text);
+    color: var(--color-surface);
+    z-index: 10;
+}
+
+.skip-link:focus { transform: translateY(0); color: var(--color-surface); }
+
+@media (prefers-reduced-motion: reduce) {
+    a, button, input, select, textarea { transition: none; }
+}

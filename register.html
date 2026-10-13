@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Навчальна форма реєстрації облікового запису LUME.">
+    <title>Реєстрація — LUME</title>
+<link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Перейти до основного вмісту</a>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html" aria-label="LUME — на головну"><strong>LUME</strong><span>SMART OBJECTS FOR HOME</span></a>
+            <nav class="site-nav" aria-label="Основна навігація"><ul>
+                <li><a href="index.html#collection">SHOP</a></li>
+                <li><a href="index.html#rooms">ROOMS</a></li>
+                <li><a href="index.html#journal">JOURNAL</a></li>
+                <li><a href="index.html#about">ABOUT</a></li>
+                <li><a href="product-form.html">Додати товар</a></li>
+            </ul></nav>
+            <nav class="account-nav" aria-label="Обліковий запис"><a class="account-link" href="login.html">Вхід</a><a class="account-link" href="register.html" aria-current="page">Реєстрація</a></nav>
+        </div>
+    </header><main id="main-content" tabindex="-1" class="container page-main"><div class="form-panel">
+        <h1 class="page-title">Реєстрація в LUME</h1>
+        <p class="form-intro">Заповніть дані для нового облікового запису. Усі поля обов’язкові.</p>
+        <p id="register-demo" class="demo-note">Це навчальна форма без сервера. Не вводьте справжні паролі.
+            Створення облікового запису ще не реалізоване.</p>
+        <form action="api/register" method="post" aria-describedby="register-demo">
+            <fieldset>
+                <legend>Профіль</legend>
+                <div class="field">
+                    <label for="register-name">Відображуване ім’я</label>
+                    <p id="register-name-hint" class="hint">Від 2 до 80 символів. Можна використати псевдонім.</p>
+                    <input id="register-name" name="displayName" type="text" autocomplete="nickname" minlength="2" maxlength="80" required aria-describedby="register-name-hint register-name-error" class="field-control">
+                <span id="register-name-error" class="field-error">Перевірте це поле: заповніть його відповідно до підпису та вказаних правил.</span>
+</div>
+                <div class="field">
+                    <label for="register-email">Електронна пошта</label>
+                    <input id="register-email" name="email" type="email" autocomplete="email" required class="field-control" aria-describedby="register-email-error">
+                <span id="register-email-error" class="field-error">Перевірте це поле: заповніть його відповідно до підпису та вказаних правил.</span>
+</div>
+            </fieldset>
+            <fieldset>
+                <legend>Новий пароль</legend>
+                <div class="field">
+                    <label for="register-password">Пароль</label>
+                    <p id="register-password-hint" class="hint">Від 8 до 128 символів — навчальне правило проєкту.
+                        Немає вимоги використовувати символи кожного виду.</p>
+                    <input id="register-password" name="password" type="password" autocomplete="new-password" minlength="8" maxlength="128" required aria-describedby="register-password-hint register-password-error" class="field-control">
+                <span id="register-password-error" class="field-error">Перевірте це поле: заповніть його відповідно до підпису та вказаних правил.</span>
+</div>
+                <div class="field">
+                    <label for="register-password-confirm">Підтвердження пароля</label>
+                    <p id="register-confirm-hint" class="hint">Повторіть пароль. HTML перевіряє заповнення й довжину,
+                        але не порівнює два паролі. Перевірка збігу з’явиться на наступному етапі.</p>
+                    <input id="register-password-confirm" name="passwordConfirmation" type="password" autocomplete="new-password" minlength="8" maxlength="128" required aria-describedby="register-confirm-hint register-password-confirm-error" class="field-control">
+                <span id="register-password-confirm-error" class="field-error">Перевірте це поле: заповніть його відповідно до підпису та вказаних правил.</span>
+</div>
+            </fieldset>
+            <div class="form-actions">
+<button type="submit" class="button">Зареєструватися</button>
+        </div>
+</form>
+        <p>Уже маєте обліковий запис? <a href="login.html">Увійти</a></p>
+    </div></main>
+    <footer class="site-footer"><div class="container">
+        <p>© 2026 LUME. Навчальний проєкт.</p>
+        <p><a href="index.html">Повернутися на головну</a></p>
+    </div></footer>
+</body>
+</html>

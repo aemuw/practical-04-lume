@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Навчальна форма входу до облікового запису LUME.">
+    <title>Вхід — LUME</title>
+<link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Перейти до основного вмісту</a>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html" aria-label="LUME — на головну"><strong>LUME</strong><span>SMART OBJECTS FOR HOME</span></a>
+            <nav class="site-nav" aria-label="Основна навігація"><ul>
+                <li><a href="index.html#collection">SHOP</a></li>
+                <li><a href="index.html#rooms">ROOMS</a></li>
+                <li><a href="index.html#journal">JOURNAL</a></li>
+                <li><a href="index.html#about">ABOUT</a></li>
+                <li><a href="product-form.html">Додати товар</a></li>
+            </ul></nav>
+            <nav class="account-nav" aria-label="Обліковий запис"><a class="account-link" href="login.html" aria-current="page">Вхід</a><a class="account-link" href="register.html">Реєстрація</a></nav>
+        </div>
+    </header><main id="main-content" tabindex="-1" class="container page-main"><div class="form-panel">
+        <h1 class="page-title">Вхід до LUME</h1>
+        <p class="form-intro">Введіть email та пароль облікового запису.</p>
+        <p id="login-demo" class="demo-note">Навчальна форма: сервер ще не підключено. Використовуйте лише вигадані дані.
+            Після коректного заповнення браузер спробує надіслати POST на майбутній маршрут.</p>
+        <form action="api/login" method="post" aria-describedby="login-demo">
+            <fieldset>
+                <legend>Дані для входу</legend>
+                <div class="field">
+                    <label for="login-email">Електронна пошта (обов’язково)</label>
+                    <input id="login-email" name="email" type="email" autocomplete="email" required class="field-control" aria-describedby="login-email-error">
+                <span id="login-email-error" class="field-error">Перевірте це поле: заповніть його відповідно до підпису та вказаних правил.</span>
+</div>
+                <div class="field">
+                    <label for="login-password">Пароль (обов’язково)</label>
+                    <input id="login-password" name="password" type="password" autocomplete="current-password" required class="field-control" aria-describedby="login-password-error">
+                <span id="login-password-error" class="field-error">Перевірте це поле: заповніть його відповідно до підпису та вказаних правил.</span>
+</div>
+            </fieldset>
+            <div class="form-actions">
+<button type="submit" class="button">Увійти</button>
+        </div>
+</form>
+        <p>Ще немає облікового запису? <a href="register.html">Зареєструватися</a></p>
+    </div></main>
+    <footer class="site-footer"><div class="container">
+        <p>© 2026 LUME. Навчальний проєкт.</p>
+        <p><a href="index.html">Повернутися на головну</a></p>
+    </div></footer>
+</body>
+</html>
