@@ -18,12 +18,7 @@ practical-04-lume/
 │   ├── lume-socket.png
 │   ├── lume-switch.png
 │   └── lume-sense.png
-├── evidence/
 ├── README.md
-├── FORMS.md
-├── WALKTHROUGH.md
-├── CHECKS.md
-├── REPORT-DRAFT.md
 └── .gitignore
 ```
 
