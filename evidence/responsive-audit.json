@@ -1,0 +1,780 @@
+{
+  "browser": "155.0.4283.45",
+  "checkedAt": "2026-10-15T07:07:22.241Z",
+  "checks": 87,
+  "failures": [],
+  "results": [
+    {
+      "name": "index.html: 320px",
+      "ok": true,
+      "details": {
+        "viewport": 320,
+        "width": 320,
+        "clipped": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "index.html: 360px",
+      "ok": true,
+      "details": {
+        "viewport": 360,
+        "width": 360,
+        "clipped": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "index.html: 390px",
+      "ok": true,
+      "details": {
+        "viewport": 390,
+        "width": 390,
+        "clipped": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "index.html: 430px",
+      "ok": true,
+      "details": {
+        "viewport": 430,
+        "width": 430,
+        "clipped": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "index.html: 640px",
+      "ok": true,
+      "details": {
+        "viewport": 640,
+        "width": 640,
+        "clipped": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "index.html: 703px",
+      "ok": true,
+      "details": {
+        "viewport": 703,
+        "width": 703,
+        "clipped": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "index.html: 704px",
+      "ok": true,
+      "details": {
+        "viewport": 704,
+        "width": 704,
+        "clipped": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "index.html: 768px",
+      "ok": true,
+      "details": {
+        "viewport": 768,
+        "width": 768,
+        "clipped": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "Hero uses two usable columns at 768px",
+      "ok": true,
+      "details": [
+        {
+          "top": 437.625,
+          "width": 352
+        },
+        {
+          "top": 437.625,
+          "width": 352
+        }
+      ]
+    },
+    {
+      "name": "index.html: 900px",
+      "ok": true,
+      "details": {
+        "viewport": 900,
+        "width": 900,
+        "clipped": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "index.html: 1151px",
+      "ok": true,
+      "details": {
+        "viewport": 1151,
+        "width": 1151,
+        "clipped": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "index.html: 1152px",
+      "ok": true,
+      "details": {
+        "viewport": 1152,
+        "width": 1152,
+        "clipped": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "index.html: 1280px",
+      "ok": true,
+      "details": {
+        "viewport": 1280,
+        "width": 1280,
+        "clipped": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "Four catalogue cards fit in one row at 1280px",
+      "ok": true,
+      "details": [
+        1143.875,
+        1143.875,
+        1143.875,
+        1143.875
+      ]
+    },
+    {
+      "name": "index.html: 1440px",
+      "ok": true,
+      "details": {
+        "viewport": 1440,
+        "width": 1440,
+        "clipped": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "index.html: long unbroken text at 320px",
+      "ok": true,
+      "details": {
+        "viewport": 320,
+        "width": 320,
+        "clipped": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "index.html: CSS zoom 200% stress test",
+      "ok": true,
+      "details": {
+        "viewport": 1280,
+        "width": 1280,
+        "clipped": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "index.html: first Tab reveals skip link",
+      "ok": true
+    },
+    {
+      "name": "index.html: skip link focuses main",
+      "ok": true
+    },
+    {
+      "name": "index.html: visible keyboard focus",
+      "ok": true
+    },
+    {
+      "name": "index.html: reduced motion disables transitions",
+      "ok": true
+    },
+    {
+      "name": "login.html: 320px",
+      "ok": true,
+      "details": {
+        "viewport": 320,
+        "width": 320,
+        "clipped": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "login.html: 360px",
+      "ok": true,
+      "details": {
+        "viewport": 360,
+        "width": 360,
+        "clipped": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "login.html: 390px",
+      "ok": true,
+      "details": {
+        "viewport": 390,
+        "width": 390,
+        "clipped": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "login.html: 430px",
+      "ok": true,
+      "details": {
+        "viewport": 430,
+        "width": 430,
+        "clipped": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "login.html: 640px",
+      "ok": true,
+      "details": {
+        "viewport": 640,
+        "width": 640,
+        "clipped": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "login.html: 703px",
+      "ok": true,
+      "details": {
+        "viewport": 703,
+        "width": 703,
+        "clipped": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "login.html: 704px",
+      "ok": true,
+      "details": {
+        "viewport": 704,
+        "width": 704,
+        "clipped": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "login.html: 768px",
+      "ok": true,
+      "details": {
+        "viewport": 768,
+        "width": 768,
+        "clipped": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "login.html: 900px",
+      "ok": true,
+      "details": {
+        "viewport": 900,
+        "width": 900,
+        "clipped": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "login.html: 1151px",
+      "ok": true,
+      "details": {
+        "viewport": 1151,
+        "width": 1151,
+        "clipped": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "login.html: 1152px",
+      "ok": true,
+      "details": {
+        "viewport": 1152,
+        "width": 1152,
+        "clipped": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "login.html: 1280px",
+      "ok": true,
+      "details": {
+        "viewport": 1280,
+        "width": 1280,
+        "clipped": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "login.html: 1440px",
+      "ok": true,
+      "details": {
+        "viewport": 1440,
+        "width": 1440,
+        "clipped": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "login.html: long unbroken text at 320px",
+      "ok": true,
+      "details": {
+        "viewport": 320,
+        "width": 320,
+        "clipped": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "login.html: CSS zoom 200% stress test",
+      "ok": true,
+      "details": {
+        "viewport": 1280,
+        "width": 1280,
+        "clipped": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "login.html: first Tab reveals skip link",
+      "ok": true
+    },
+    {
+      "name": "login.html: skip link focuses main",
+      "ok": true
+    },
+    {
+      "name": "login.html: visible keyboard focus",
+      "ok": true
+    },
+    {
+      "name": "login.html: reduced motion disables transitions",
+      "ok": true
+    },
+    {
+      "name": "login.html: empty required form blocked",
+      "ok": true
+    },
+    {
+      "name": "login.html: validation messages at 320px",
+      "ok": true,
+      "details": {
+        "viewport": 320,
+        "width": 320,
+        "clipped": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "register.html: 320px",
+      "ok": true,
+      "details": {
+        "viewport": 320,
+        "width": 320,
+        "clipped": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "register.html: 360px",
+      "ok": true,
+      "details": {
+        "viewport": 360,
+        "width": 360,
+        "clipped": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "register.html: 390px",
+      "ok": true,
+      "details": {
+        "viewport": 390,
+        "width": 390,
+        "clipped": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "register.html: 430px",
+      "ok": true,
+      "details": {
+        "viewport": 430,
+        "width": 430,
+        "clipped": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "register.html: 640px",
+      "ok": true,
+      "details": {
+        "viewport": 640,
+        "width": 640,
+        "clipped": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "register.html: 703px",
+      "ok": true,
+      "details": {
+        "viewport": 703,
+        "width": 703,
+        "clipped": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "register.html: 704px",
+      "ok": true,
+      "details": {
+        "viewport": 704,
+        "width": 704,
+        "clipped": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "register.html: 768px",
+      "ok": true,
+      "details": {
+        "viewport": 768,
+        "width": 768,
+        "clipped": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "register.html: 900px",
+      "ok": true,
+      "details": {
+        "viewport": 900,
+        "width": 900,
+        "clipped": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "register.html: 1151px",
+      "ok": true,
+      "details": {
+        "viewport": 1151,
+        "width": 1151,
+        "clipped": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "register.html: 1152px",
+      "ok": true,
+      "details": {
+        "viewport": 1152,
+        "width": 1152,
+        "clipped": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "register.html: 1280px",
+      "ok": true,
+      "details": {
+        "viewport": 1280,
+        "width": 1280,
+        "clipped": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "register.html: 1440px",
+      "ok": true,
+      "details": {
+        "viewport": 1440,
+        "width": 1440,
+        "clipped": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "register.html: long unbroken text at 320px",
+      "ok": true,
+      "details": {
+        "viewport": 320,
+        "width": 320,
+        "clipped": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "register.html: CSS zoom 200% stress test",
+      "ok": true,
+      "details": {
+        "viewport": 1280,
+        "width": 1280,
+        "clipped": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "register.html: first Tab reveals skip link",
+      "ok": true
+    },
+    {
+      "name": "register.html: skip link focuses main",
+      "ok": true
+    },
+    {
+      "name": "register.html: visible keyboard focus",
+      "ok": true
+    },
+    {
+      "name": "register.html: reduced motion disables transitions",
+      "ok": true
+    },
+    {
+      "name": "register.html: empty required form blocked",
+      "ok": true
+    },
+    {
+      "name": "register.html: validation messages at 320px",
+      "ok": true,
+      "details": {
+        "viewport": 320,
+        "width": 320,
+        "clipped": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "product-form.html: 320px",
+      "ok": true,
+      "details": {
+        "viewport": 320,
+        "width": 320,
+        "clipped": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "product-form.html: 360px",
+      "ok": true,
+      "details": {
+        "viewport": 360,
+        "width": 360,
+        "clipped": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "product-form.html: 390px",
+      "ok": true,
+      "details": {
+        "viewport": 390,
+        "width": 390,
+        "clipped": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "product-form.html: 430px",
+      "ok": true,
+      "details": {
+        "viewport": 430,
+        "width": 430,
+        "clipped": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "product-form.html: 640px",
+      "ok": true,
+      "details": {
+        "viewport": 640,
+        "width": 640,
+        "clipped": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "product-form.html: 703px",
+      "ok": true,
+      "details": {
+        "viewport": 703,
+        "width": 703,
+        "clipped": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "product-form.html: 704px",
+      "ok": true,
+      "details": {
+        "viewport": 704,
+        "width": 704,
+        "clipped": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "product-form.html: 768px",
+      "ok": true,
+      "details": {
+        "viewport": 768,
+        "width": 768,
+        "clipped": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "product-form.html: 900px",
+      "ok": true,
+      "details": {
+        "viewport": 900,
+        "width": 900,
+        "clipped": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "product-form.html: 1151px",
+      "ok": true,
+      "details": {
+        "viewport": 1151,
+        "width": 1151,
+        "clipped": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "product-form.html: 1152px",
+      "ok": true,
+      "details": {
+        "viewport": 1152,
+        "width": 1152,
+        "clipped": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "product-form.html: 1280px",
+      "ok": true,
+      "details": {
+        "viewport": 1280,
+        "width": 1280,
+        "clipped": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "product-form.html: 1440px",
+      "ok": true,
+      "details": {
+        "viewport": 1440,
+        "width": 1440,
+        "clipped": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "product-form.html: long unbroken text at 320px",
+      "ok": true,
+      "details": {
+        "viewport": 320,
+        "width": 320,
+        "clipped": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "product-form.html: CSS zoom 200% stress test",
+      "ok": true,
+      "details": {
+        "viewport": 1280,
+        "width": 1280,
+        "clipped": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "product-form.html: first Tab reveals skip link",
+      "ok": true
+    },
+    {
+      "name": "product-form.html: skip link focuses main",
+      "ok": true
+    },
+    {
+      "name": "product-form.html: visible keyboard focus",
+      "ok": true
+    },
+    {
+      "name": "product-form.html: reduced motion disables transitions",
+      "ok": true
+    },
+    {
+      "name": "product-form.html: empty required form blocked",
+      "ok": true
+    },
+    {
+      "name": "product-form.html: validation messages at 320px",
+      "ok": true,
+      "details": {
+        "viewport": 320,
+        "width": 320,
+        "clipped": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "Catalogue with 0 cards at 320px",
+      "ok": true,
+      "details": {
+        "viewport": 320,
+        "width": 320,
+        "clipped": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "Catalogue with 24 cards at 320px",
+      "ok": true,
+      "details": {
+        "viewport": 320,
+        "width": 320,
+        "clipped": [],
+        "brokenImages": []
+      }
+    },
+    {
+      "name": "320px container leaves at least 280px for content",
+      "ok": true
+    }
+  ],
+  "screenshots": [
+    "index-360.png",
+    "index-768.png",
+    "index-1280.png",
+    "login-360.png",
+    "login-768.png",
+    "login-1280.png",
+    "register-360.png",
+    "register-768.png",
+    "register-1280.png",
+    "product-form-360.png",
+    "product-form-768.png",
+    "product-form-1280.png"
+  ],
+  "limitations": [
+    "CSS zoom is automated; actual browser UI zoom 200% remains a manual check.",
+    "No backend exists; successful POST persistence is outside this CSS project."
+  ]
+}
